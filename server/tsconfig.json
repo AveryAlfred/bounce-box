@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "src",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "outDir": "dist",
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    // "strict": true,
+    "esModuleInterop": true,
+
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules"]
+}

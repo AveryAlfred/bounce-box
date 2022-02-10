@@ -1,0 +1,15 @@
+export const EVENTS = {
+  connection: "connection",
+  CLIENT: {
+    CREATE_ROOM: "CREATE_ROOM",
+    SEND_ROOM_MESSAGE: "SEND_ROOM_MESSAGE",
+    JOIN_ROOM_NAME: 'JOIN_ROOM_NAME',
+    JOIN_ROOM: "JOIN_ROOM",
+  },
+  SERVER: {
+    ROOMS: "ROOMS",
+    JOINED_ROOM: "JOINED_ROOM",
+    JOIN_ROOM_NAME: 'JOIN_ROOM_NAME',
+    ROOM_MESSAGE: "ROOM_MESSAGE",
+  },
+};
