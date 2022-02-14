@@ -41,4 +41,3 @@ Technology
 - Express - Web server
 - Matter.js - 2D physics engine
 - Socket.io - WebSocket server
-- Nanoid - Unique IDs
