@@ -1,6 +1,3 @@
-_Bounce Box is a project is progress._
-
-
 
 
 
