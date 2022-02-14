@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import { App } from './App';
 import { SocketsProvider } from './utils/useSockets';
 import { GameStatesProvider } from './utils/useGameState';

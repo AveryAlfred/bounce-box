@@ -1,7 +1,7 @@
 import { customAlphabet } from 'nanoid';
+import { Server, Socket } from 'socket.io';
 import logger from './utils/logger';
 
-import { Server, Socket } from 'socket.io';
 import { createGame } from './engine/createGame';
 
 // All events listened to and emitted

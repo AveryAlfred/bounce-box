@@ -1,9 +1,11 @@
-import { useGameState, GameStates } from './utils/useGameState';
 import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 
+import { useGameState, GameStates } from './utils/useGameState';
+
 import { Landing } from './components/Landing/Landing';
 import { Board } from './components/Board/Board';
+import { Forum } from './components/Forum/Forum';
 
 export const App = () => {
   const { view } = useGameState();
@@ -13,7 +15,7 @@ export const App = () => {
       <GlobalStyle />
       <div onContextMenu={(e) => e.preventDefault()}>
         {view === GameStates.Login && <Landing />}
-        {/* {view === GameStates.Message && <Forum />} */}
+        {view === GameStates.Message && <Forum />}
         {view === GameStates.Start && <Board />}
       </div>
     </>

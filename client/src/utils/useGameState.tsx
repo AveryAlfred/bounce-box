@@ -1,9 +1,9 @@
 import { createContext, useContext, useState } from 'react';
 
 export enum GameStates {
-  Login = 'login',
-  Message = 'message',
-  Start = 'start',
+  Login,
+  Message,
+  Start,
 }
 
 interface Context {

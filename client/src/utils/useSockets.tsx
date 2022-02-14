@@ -6,10 +6,10 @@ interface Context {
   socket: Socket;
   username?: string;
   setUsername: Function;
-  messages?: { message: string; time: string; username: string }[];
   setMessages: Function;
-  roomId?: string;
   rooms: object;
+  messages?: { message: string; time: string; username: string }[];
+  roomId?: string;
 }
 
 const socket = io('http://localhost:1337');
@@ -37,15 +37,15 @@ export const SocketsProvider = (props: any) => {
     setMessages([]);
   });
 
-  // useEffect(() => {
-  //   socket.on(EVENTS.SERVER.ROOM_MESSAGE, ({ message, username, time }) => {
-  //     if (!document.hasFocus()) {
-  //       document.title = 'New message...';
-  //     }
+  useEffect(() => {
+    socket.on(EVENTS.SERVER.ROOM_MESSAGE, ({ message, username, time }) => {
+      if (!document.hasFocus()) {
+        document.title = 'New message...';
+      }
 
-  //     setMessages((messages) => [...messages, { message, username, time }]);
-  //   });
-  // }, [socket]);
+      setMessages((messages) => [...messages, { message, username, time }]);
+    });
+  }, [socket]);
 
   return (
     <SocketContext.Provider
