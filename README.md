@@ -15,11 +15,11 @@ https://user-images.githubusercontent.com/89222654/153465108-977674b0-be6f-422d-
 Features
 
 - Landing page with room selection
-- Sync'd rendering of entity physics
+- Sync'd rendering of entity positions via authoritative server model 
 
 Technology
 
-- Pixi.js - Rendering library
+- PixiJS - Rendering library
 - ReactPixiFiber - Declarative Pixi.js components
 - React Context API - State management
 - Socket.io - WebSocket client
