@@ -20,7 +20,7 @@ Features
 Technology
 
 - PixiJS - Rendering library
-- ReactPixiFiber - Declarative Pixi.js components
+- ReactPixiFiber - Declarative PixiJS components
 - React Context API - State management
 - Socket.io - WebSocket client
 
